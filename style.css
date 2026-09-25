@@ -2308,33 +2308,3 @@ textarea {
     border-color: transparent;
     font-size: 9px
 }
-
-.dark .premium-promo {
-    background: linear-gradient(120deg, rgba(108, 92, 231, .14), rgba(255, 214, 93, .07))
-}
-
-@media(max-width:760px) {
-    .premium-promo {
-        align-items: flex-start;
-        flex-direction: column
-    }
-}
-
-/* Standart (Light) ranglar */
-:root {
-    --bg-color: #ffffff;
-    --text-color: #333333;
-    /* Boshqa ranglar... */
-}
-
-/* Dark rejim uchun ranglar */
-[data-theme="dark"] {
-    --bg-color: #121212;
-    --text-color: #f0f0f0;
-    /* Qora rejimdagi ranglar... */
-}
-
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-}
