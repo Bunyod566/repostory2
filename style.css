@@ -2319,3 +2319,22 @@ textarea {
         flex-direction: column
     }
 }
+
+/* Standart (Light) ranglar */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    /* Boshqa ranglar... */
+}
+
+/* Dark rejim uchun ranglar */
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #f0f0f0;
+    /* Qora rejimdagi ranglar... */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
