@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#6c5ce7" />
+    <title>Premium — StudyLens UZ</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="premium">
+    <div class="app-shell">
+        <aside class="sidebar" id="sidebar">
+            <a class="brand" href="index.html"><span class="brand-mark">S</span><span>StudyLens</span><b>UZ</b></a>
+            <div class="profile-mini">
+                <div class="avatar" data-avatar>B</div>
+                <div><strong data-name>Bunyod</strong><small data-plan-label>Free plan</small></div>
+            </div>
+            <nav class="nav">
+                <a href="index.html" data-nav="home"><span>⌂</span> Bosh sahifa</a>
+                <a href="study.html" data-nav="study"><span>✦</span> AI Study</a>
+                <a href="quiz.html" data-nav="quiz"><span>◈</span> Quiz Arena</a>
+                <a href="progress.html" data-nav="progress"><span>◒</span> Progress</a>
+                <a href="library.html" data-nav="library"><span>▱</span> Library</a>
+                <a href="premium.html" data-nav="premium"><span>✦</span> Premium</a>
+            </nav>
+            <div class="sidebar-bottom">
+                <a href="settings.html" data-nav="settings"><span>⚙</span> Sozlamalar</a>
+                <button class="theme-toggle" id="themeToggle"><span>☾</span> Dark rejim</button>
+            </div>
+        </aside>
+
+        <main class="main">
+            <header class="topbar">
+                <button class="mobile-menu" id="mobileMenu">☰</button>
+                <div class="search"><span>⌕</span><input id="globalSearch"
+                        placeholder="Premium funksiyalarini qidiring..." /></div>
+                <div class="top-actions"><a class="icon-btn" href="library.html">▱</a><a class="icon-btn"
+                        href="settings.html">⚙</a>
+                    <div class="avatar" data-avatar>B</div>
+                </div>
+            </header>
+
+            <section class="page premium-page">
+                <div class="premium-hero card">
+                    <div class="premium-hero-copy">
+                        <span class="premium-kicker">✦ STUDYLENS PREMIUM</span>
+                        <h1>O‘qishni keyingi<br /><span>darajaga olib chiq.</span></h1>
+                        <p>Ko‘proq AI sessiyalar, chuqur tushuntirishlar, cheksiz quizlar va aqlli progress vositalari
+                            uchun Premium rejim.</p>
+                        <div class="hero-actions">
+                            <button class="btn btn-premium" id="activatePremium">Premiumni demo tarzida yoqish
+                                →</button>
+                            <a class="btn btn-secondary" href="#features">Funksiyalarni ko‘rish</a>
+                        </div>
+                        <div class="premium-trust"><span>⚡ Tezkor AI</span><span>∞ Cheksiz quiz</span><span>🔒 Demo va
+                                xavfsiz</span></div>
+                    </div>
+                    <div class="premium-orbit">
+                        <div class="premium-ring ring-a"></div>
+                        <div class="premium-ring ring-b"></div>
+                        <div class="premium-glow"></div>
+                        <div class="premium-card-art">
+                            <div class="premium-star">✦</div>
+                            <strong>PREMIUM</strong>
+                            <small data-plan-label>Free plan</small>
+                            <div class="premium-art-line"></div>
+                            <span>AI • QUIZ • PROGRESS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="premium-status card" id="premiumStatusBox">
+                    <div class="premium-status-icon">✦</div>
+                    <div>
+                        <span class="eyebrow">CURRENT PLAN</span>
+                        <h2 data-premium-status>Free plan</h2>
+                        <p id="premiumStatusText">Premium funksiyalari hozir qulflangan.</p>
+                    </div>
+                    <span class="premium-status-badge" id="premiumBadge">FREE</span>
+                </div>
+
+                <div class="section-head" id="features">
+                    <div><span class="eyebrow">PREMIUM FEATURES</span>
+                        <h2>Premium nimalarni ochadi?</h2>
+                    </div>
+                </div>
+
+                <div class="premium-feature-grid">
+                    <div class="premium-feature card">
+                        <div class="feature-icon purple">✦</div>
+                        <div>
+                            <h3>Deep AI Explain</h3>
+                            <p>Mavzuni misollar, analogiyalar va bosqichlar bilan chuqurroq tushuntirish.</p>
+                        </div>
+                        <span class="feature-tag">PRO</span>
+                    </div>
+                    <div class="premium-feature card">
+                        <div class="feature-icon blue">∞</div>
+                        <div>
+                            <h3>Unlimited Quiz</h3>
+                            <p>Ko‘proq quizlar, vaqtli testlar va mavzuga mos savollar.</p>
+                        </div>
+                        <span class="feature-tag">PRO</span>
+                    </div>
+                    <div class="premium-feature card">
+                        <div class="feature-icon green">⌁</div>
+                        <div>
+                            <h3>Smart Progress</h3>
+                            <p>Zaif mavzularni ajratish va keyingi o‘qish yo‘nalishini ko‘rsatish.</p>
+                        </div>
+                        <span class="feature-tag">PRO</span>
+                    </div>
+                    <div class="premium-feature card">
+                        <div class="feature-icon orange">▣</div>
+                        <div>
+                            <h3>PDF Notes</h3>
+                            <p>Saqlangan darslarni keyin PDF eksport qilish uchun tayyorlash.</p>
+                        </div>
+                        <span class="feature-tag">PRO</span>
+                    </div>
+                    <div class="premium-feature card">
+                        <div class="feature-icon pink">A</div>
+                        <div>
+                            <h3>AI Language Mix</h3>
+                            <p>O‘zbekcha tushuntirishni inglizcha terminlar bilan yonma-yon o‘rganish.</p>
+                        </div>
+                        <span class="feature-tag">PRO</span>
+                    </div>
+                    <div class="premium-feature card">
+                        <div class="feature-icon gold">★</div>
+                        <div>
+                            <h3>XP Boost</h3>
+                            <p>Premium challenge’larda qo‘shimcha XP va streak bonuslari.</p>
+                        </div>
+                        <span class="feature-tag">PRO</span>
+                    </div>
+                </div>
+
+                <div class="section-head">
+                    <div><span class="eyebrow">PLANS</span>
+                        <h2>Oddiy va tushunarli</h2>
+                    </div>
+                </div>
+
+                <div class="plans-grid">
+                    <div class="plan-card card">
+                        <span class="plan-label">START</span>
+                        <h3>Free</h3>
+                        <div class="plan-price">0 <small>so‘m</small></div>
+                        <p>Platformani sinash uchun asosiy funksiyalar.</p>
+                        <div class="plan-list"><span>✓ AI Study demo</span><span>✓ Asosiy quizlar</span><span>✓
+                                Progress</span><span>✓ Library</span></div>
+                        <a href="study.html" class="btn btn-secondary wide">Davom etish</a>
+                    </div>
+
+                    <div class="plan-card card featured-plan">
+                        <div class="popular-label">MOST POWERFUL</div>
+                        <span class="plan-label">PRO</span>
+                        <h3>Premium</h3>
+                        <div class="plan-price">29 000 <small>so‘m / oy</small></div>
+                        <p>Premium mahsulot modeli uchun demo narx.</p>
+                        <div class="plan-list"><span>✓ Deep AI Explain</span><span>✓ Unlimited Quiz</span><span>✓ Smart
+                                Progress</span><span>✓ PDF Notes</span><span>✓ XP Boost</span></div>
+                        <button class="btn btn-premium wide" id="activatePremium2">Premiumni yoqish</button>
+                    </div>
+                </div>
+
+                <div class="premium-note card">
+                    <strong>ℹ️ Prototip eslatmasi</strong>
+                    <p>Bu versiyada Premium tugmasi haqiqiy to‘lov qilmaydi. U faqat premium holatini brauzerda saqlab,
+                        interfeysdagi Pro funksiyalarni demo sifatida ochadi.</p>
+                </div>
+            </section>
+            <footer class="footer">Premium • StudyLens UZ • Demo billing</footer>
+        </main>
+    </div>
+
+    <div class="premium-modal hidden" id="premiumModal">
+        <div class="premium-modal-backdrop" data-close-premium></div>
+        <div class="premium-modal-card card" role="dialog" aria-modal="true" aria-labelledby="premiumModalTitle">
+            <button class="modal-close" data-close-premium>×</button>
+            <div class="modal-sparkle">✦</div>
+            <span class="eyebrow">PREMIUM ACTIVATED</span>
+            <h2 id="premiumModalTitle">Premium demo yoqildi! 🚀</h2>
+            <p>Endi StudyLens interfeysida Premium holati saqlanadi. Bu hali haqiqiy to‘lov emas — faqat prototip.</p>
+            <a href="study.html" class="btn btn-premium wide">AI Study’ga qaytish →</a>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

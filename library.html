@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library — StudyLens</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="library">
+    <div class="app-shell">
+        <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><span
+                    class="brand-mark">S</span><span>StudyLens</span><b>UZ</b></a>
+            <div class="profile-mini">
+                <div class="avatar" data-avatar>B</div>
+                <div><strong data-name>Bunyod</strong><small>Student account</small></div>
+            </div>
+            <nav class="nav"><a href="index.html" data-nav="home"><span>⌂</span> Bosh sahifa</a><a href="study.html"
+                    data-nav="study"><span>✦</span> AI Study</a><a href="quiz.html" data-nav="quiz"><span>◈</span> Quiz
+                    Arena</a><a href="progress.html" data-nav="progress"><span>◒</span> Progress</a><a
+                    href="library.html" data-nav="library"><span>▱</span> Library</a></nav>
+            <div class="sidebar-bottom"><a href="settings.html" data-nav="settings"><span>⚙</span> Sozlamalar</a><button
+                    class="theme-toggle" id="themeToggle"><span>☾</span> Rejimni almashtirish</button></div>
+        </aside>
+        <main class="main">
+            <header class="topbar"><button class="mobile-menu" id="mobileMenu">☰</button>
+                <div class="search"><span>⌕</span><input id="globalSearch"
+                        placeholder="Saqlangan darslardan qidiring..." /></div>
+                <div class="top-actions"><a class="icon-btn" href="library.html">▱</a><a class="icon-btn"
+                        href="settings.html">⚙</a>
+                    <div class="avatar" data-avatar>B</div>
+                </div>
+            </header>
+            <section class="page">
+                <div class="section-head">
+                    <div><span class="eyebrow">YOUR LIBRARY</span>
+                        <h1 class="page-title">Saqlangan darslar.</h1>
+                        <p class="page-subtitle">AI javoblarini keyin qayta ko‘rish uchun saqlab qo‘ying.</p>
+                    </div><a href="study.html" class="btn btn-primary">+ Yangi dars</a>
+                </div>
+                <div id="libraryGrid" class="library-grid"></div>
+            </section>
+            <footer class="footer">Library • StudyLens UZ</footer>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

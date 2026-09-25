@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress — StudyLens</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="progress">
+    <div class="app-shell">
+        <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><span
+                    class="brand-mark">S</span><span>StudyLens</span><b>UZ</b></a>
+            <div class="profile-mini">
+                <div class="avatar" data-avatar>B</div>
+                <div><strong data-name>Bunyod</strong><small>Student account</small></div>
+            </div>
+            <nav class="nav"><a href="index.html" data-nav="home"><span>⌂</span> Bosh sahifa</a><a href="study.html"
+                    data-nav="study"><span>✦</span> AI Study</a><a href="quiz.html" data-nav="quiz"><span>◈</span> Quiz
+                    Arena</a><a href="progress.html" data-nav="progress"><span>◒</span> Progress</a><a
+                    href="library.html" data-nav="library"><span>▱</span> Library</a></nav>
+            <div class="sidebar-bottom"><a href="settings.html" data-nav="settings"><span>⚙</span> Sozlamalar</a><button
+                    class="theme-toggle" id="themeToggle"><span>☾</span> Rejimni almashtirish</button></div>
+        </aside>
+        <main class="main">
+            <header class="topbar"><button class="mobile-menu" id="mobileMenu">☰</button>
+                <div class="search"><span>⌕</span><input id="globalSearch"
+                        placeholder="Mavzu, fan yoki test qidiring..." /></div>
+                <div class="top-actions"><a class="icon-btn" href="library.html">▱</a><a class="icon-btn"
+                        href="settings.html">⚙</a>
+                    <div class="avatar" data-avatar>B</div>
+                </div>
+            </header>
+            <section class="page">
+                <div class="section-head">
+                    <div><span class="eyebrow">PROGRESS CENTER</span>
+                        <h1 class="page-title">O‘sishing ko‘rinib turibdi.</h1>
+                        <p class="page-subtitle">Natijalaringiz brauzerda saqlanadi. Keyin real backendga ulash mumkin.
+                        </p>
+                    </div>
+                </div>
+                <div class="progress-overview">
+                    <div class="card level-card">
+                        <div class="level-top">
+                            <div class="level-avatar">5</div>
+                            <div><span class="eyebrow">CURRENT LEVEL</span>
+                                <h2>Learning Explorer</h2>
+                                <p>Keyingi levelgacha 240 XP</p>
+                            </div>
+                        </div>
+                        <div class="xp-line"><span style="width:48%"></span></div>
+                        <div class="level-meta"><span>760 XP</span><span>1,000 XP</span></div>
+                    </div>
+                    <div class="card ring-card">
+                        <div class="ring" id="accuracyRing">
+                            <div><strong id="accuracyValue">0%</strong><small>accuracy</small></div>
+                        </div>
+                        <div>
+                            <h3>Umumiy aniqlik</h3>
+                            <p>Quiz natijalaringiz asosida.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="metrics-grid">
+                    <div class="metric card"><span>◈</span>
+                        <div><strong data-stat="quizzes">0</strong><small>Quizlar</small></div>
+                    </div>
+                    <div class="metric card"><span>✦</span>
+                        <div><strong data-stat="sessions">0</strong><small>AI sessiyalar</small></div>
+                    </div>
+                    <div class="metric card"><span>▱</span>
+                        <div><strong data-stat="saved">0</strong><small>Saqlanganlar</small></div>
+                    </div>
+                    <div class="metric card"><span>🔥</span>
+                        <div><strong data-stat="streak">1</strong><small>Streak</small></div>
+                    </div>
+                </div>
+                <div class="card chart-card">
+                    <div class="card-title-row">
+                        <div>
+                            <h2>Oxirgi 7 kun</h2>
+                            <p>Quizlar soni bo‘yicha faoliyat.</p>
+                        </div><span class="mini-badge">LIVE LOCAL</span>
+                    </div>
+                    <div id="activityChart" class="bar-chart"></div>
+                </div>
+                <div class="card insights">
+                    <div class="insight"><span class="insight-icon">↗</span>
+                        <div><strong>Eng ko‘p o‘rganilgan fan</strong>
+                            <p id="topSubject">Hali ma’lumot kam</p>
+                        </div>
+                    </div>
+                    <div class="insight"><span class="insight-icon">✓</span>
+                        <div><strong>Keyingi qadam</strong>
+                            <p>1 ta quiz ishlang va natijani oshiring.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">Progress • StudyLens UZ</footer>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

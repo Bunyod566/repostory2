@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Arena — StudyLens</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="quiz">
+    <div class="app-shell">
+        <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><span
+                    class="brand-mark">S</span><span>StudyLens</span><b>UZ</b></a>
+            <div class="profile-mini">
+                <div class="avatar" data-avatar>B</div>
+                <div><strong data-name>Bunyod</strong><small>Student account</small></div>
+            </div>
+            <nav class="nav"><a href="index.html" data-nav="home"><span>⌂</span> Bosh sahifa</a><a href="study.html"
+                    data-nav="study"><span>✦</span> AI Study</a><a href="quiz.html" data-nav="quiz"><span>◈</span> Quiz
+                    Arena</a><a href="progress.html" data-nav="progress"><span>◒</span> Progress</a><a
+                    href="library.html" data-nav="library"><span>▱</span> Library</a></nav>
+            <div class="sidebar-bottom"><a href="settings.html" data-nav="settings"><span>⚙</span> Sozlamalar</a><button
+                    class="theme-toggle" id="themeToggle"><span>☾</span> Rejimni almashtirish</button></div>
+        </aside>
+        <main class="main">
+            <header class="topbar"><button class="mobile-menu" id="mobileMenu">☰</button>
+                <div class="search"><span>⌕</span><input id="globalSearch"
+                        placeholder="Mavzu, fan yoki test qidiring..." /></div>
+                <div class="top-actions"><a class="icon-btn" href="library.html">▱</a><a class="icon-btn"
+                        href="settings.html">⚙</a>
+                    <div class="avatar" data-avatar>B</div>
+                </div>
+            </header>
+            <section class="page">
+                <div class="section-head">
+                    <div><span class="eyebrow">QUIZ ARENA</span>
+                        <h1 class="page-title">Bilimingni sinab ko‘r.</h1>
+                        <p class="page-subtitle">Fan tanlang, savollarga javob bering va natijani Progress’da kuzating.
+                        </p>
+                    </div>
+                    <div class="streak-box"><span>🔥</span>
+                        <div><strong data-stat="streak">1</strong><small>kun streak</small></div>
+                    </div>
+                </div>
+                <div id="quizHome" class="quiz-home">
+                    <div class="quiz-categories"><button class="quiz-category active"
+                            data-quiz="math"><span>∑</span><strong>Matematika</strong><small>5
+                                savol</small></button><button class="quiz-category"
+                            data-quiz="english"><span>A</span><strong>English</strong><small>5
+                                savol</small></button><button class="quiz-category"
+                            data-quiz="it"><span>&lt;/&gt;</span><strong>IT</strong><small>5
+                                savol</small></button><button class="quiz-category"
+                            data-quiz="physics"><span>⚡</span><strong>Fizika</strong><small>5 savol</small></button>
+                    </div>
+                    <div class="card featured-quiz">
+                        <div><span class="pill soft">TODAY'S QUIZ</span>
+                            <h2>5 savol. 1 daqiqa. Ketdik!</h2>
+                            <p>Vaqt bosimini qo‘shib, tez fikrlashni mashq qiling.</p><button id="startQuiz"
+                                class="btn btn-primary">Quizni boshlash →</button>
+                        </div>
+                        <div class="quiz-art">◈</div>
+                    </div>
+                </div>
+                <div id="quizRunner" class="quiz-runner hidden">
+                    <div class="quiz-top"><button id="quitQuiz" class="text-btn">← Quizdan chiqish</button>
+                        <div class="quiz-progress">
+                            <div class="progress-line"><span id="quizProgressBar"></span></div><span id="quizCounter">1
+                                / 5</span>
+                        </div>
+                        <div class="timer" id="timer">01:00</div>
+                    </div>
+                    <div class="card question-card"><span class="eyebrow">SAVOL <span id="qNum">1</span></span>
+                        <h2 id="qText">Savol</h2>
+                        <div id="options" class="options"></div><button id="nextQuestion" class="btn btn-primary wide"
+                            disabled>Keyingi savol →</button>
+                    </div>
+                </div>
+                <div id="quizResult" class="card quiz-result hidden">
+                    <div class="result-badge">★</div><span class="eyebrow">QUIZ YAKUNLANDI</span>
+                    <h2 id="scoreText">0 / 5</h2>
+                    <p id="resultText">Natijangiz.</p>
+                    <div class="result-actions"><a href="progress.html" class="btn btn-primary">Progressni
+                            ko‘rish</a><button id="retryQuiz" class="btn btn-secondary">Qayta ishlash</button></div>
+                </div>
+            </section>
+            <footer class="footer">Quiz Arena • StudyLens UZ</footer>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

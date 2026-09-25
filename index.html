@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#6c5ce7" />
+    <title>StudyLens — Aqlli o‘qish platformasi</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="home">
+    <div class="app-shell">
+        <aside class="sidebar" id="sidebar">
+            <a class="brand" href="index.html"><span class="brand-mark">S</span><span>StudyLens</span><b>UZ</b></a>
+            <div class="profile-mini">
+                <div class="avatar" data-avatar>B</div>
+                <div><strong data-name>Bunyod</strong><small>Student account</small></div>
+            </div>
+            <nav class="nav">
+                <a href="index.html" data-nav="home"><span>⌂</span> Bosh sahifa</a>
+                <a href="study.html" data-nav="study"><span>✦</span> AI Study</a>
+                <a href="quiz.html" data-nav="quiz"><span>◈</span> Quiz Arena</a>
+                <a href="progress.html" data-nav="progress"><span>◒</span> Progress</a>
+                <a href="library.html" data-nav="library"><span>▱</span> Library</a>
+                <a href="premium.html" data-nav="premium"><span>✦</span> Premium</a>
+            </nav>
+            <div class="sidebar-bottom">
+                <a href="settings.html" data-nav="settings"><span>⚙</span> Sozlamalar</a>
+                <button class="theme-toggle" id="themeToggle"><span>☾</span> Rejimni almashtirish</button>
+            </div>
+        </aside>
+
+        <main class="main">
+            <header class="topbar">
+                <button class="mobile-menu" id="mobileMenu">☰</button>
+                <div class="search"><span>⌕</span><input id="globalSearch"
+                        placeholder="Mavzu, fan yoki test qidiring..." /></div>
+                <div class="top-actions"><a class="icon-btn" href="library.html" title="Library">▱</a><a
+                        class="icon-btn" href="settings.html" title="Sozlamalar">⚙</a>
+                    <div class="avatar" data-avatar>B</div>
+                </div>
+            </header>
+
+            <section class="page hero-page">
+                <div class="hero-main card gradient-card">
+                    <div class="hero-copy">
+                        <div class="pill">✦ AI-powered learning</div>
+                        <h1>O‘rganishning yangi<br /><span>aqlli usuli.</span></h1>
+                        <p>Rasmni yukla, mavzuni tanla va StudyLens bilan darsni oddiy tilda tushun. Keyin Quiz Arena’da
+                            o‘zingni sinab ko‘r.</p>
+                        <div class="hero-actions"><a href="study.html" class="btn btn-light">AI bilan o‘rganish →</a><a
+                                href="quiz.html" class="btn btn-ghost">Quizni boshlash</a></div>
+                        <div class="hero-meta"><span>⚡ Tez tushuntirish</span><span>🧠 Bosqichma-bosqich</span><span>✓
+                                O‘zbekcha</span></div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="orb orb-1"></div>
+                        <div class="orb orb-2"></div>
+                        <div class="ai-window">
+                            <div class="ai-head"><span class="ai-dot"></span><strong>StudyLens
+                                    AI</strong><span>•••</span></div>
+                            <div class="ai-message user-msg">Kasrlarni qanday qo‘shamiz?</div>
+                            <div class="ai-message ai-msg"><span class="tiny-logo">S</span>
+                                <div><strong>Javob:</strong><br />Avval maxrajlarni bir xil qilamiz. Keyin suratlarni
+                                    qo‘shamiz.</div>
+                            </div>
+                            <div class="ai-chip-row"><span>Misol</span><span>Mini-test</span><span>Formula</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-row">
+                    <div class="stat-card card"><span class="stat-icon purple">✦</span>
+                        <div><strong data-stat="sessions">0</strong><small>AI sessiyalar</small></div>
+                    </div>
+                    <div class="stat-card card"><span class="stat-icon green">✓</span>
+                        <div><strong data-stat="quizzes">0</strong><small>Yakunlangan quiz</small></div>
+                    </div>
+                    <div class="stat-card card"><span class="stat-icon orange">★</span>
+                        <div><strong data-stat="streak">1</strong><small>Kunlik streak</small></div>
+                    </div>
+                    <div class="stat-card card"><span class="stat-icon blue">▱</span>
+                        <div><strong data-stat="saved">0</strong><small>Saqlangan dars</small></div>
+                    </div>
+                </div>
+
+                <div class="section-head">
+                    <div><span class="eyebrow">TEZKOR START</span>
+                        <h2>Bugun nimani o‘rganamiz?</h2>
+                    </div><a href="study.html" class="text-link">Barchasi →</a>
+                </div>
+                <div class="quick-grid">
+                    <a class="subject-card card" href="study.html?subject=matematika">
+                        <div class="subject-icon math">∑</div>
+                        <div>
+                            <h3>Matematika</h3>
+                            <p>Masala, formula, algebra</p>
+                        </div><span>→</span>
+                    </a>
+                    <a class="subject-card card" href="study.html?subject=fizika">
+                        <div class="subject-icon physics">⚡</div>
+                        <div>
+                            <h3>Fizika</h3>
+                            <p>Formula va tajribalar</p>
+                        </div><span>→</span>
+                    </a>
+                    <a class="subject-card card" href="study.html?subject=english">
+                        <div class="subject-icon english">A</div>
+                        <div>
+                            <h3>English</h3>
+                            <p>Grammar va vocabulary</p>
+                        </div><span>→</span>
+                    </a>
+                    <a class="subject-card card" href="study.html?subject=it">
+                        <div class="subject-icon it">&lt;/&gt;</div>
+                        <div>
+                            <h3>IT</h3>
+                            <p>HTML, CSS, JavaScript</p>
+                        </div><span>→</span>
+                    </a>
+                </div>
+
+                <div class="section-head top-gap">
+                    <div><span class="eyebrow">SIZ UCHUN</span>
+                        <h2>StudyLens qanday ishlaydi?</h2>
+                    </div>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card card">
+                        <div class="step-number">01</div>
+                        <div class="step-emoji">📷</div>
+                        <h3>Rasmni yuklang</h3>
+                        <p>Darslikdagi masala yoki mavzuni suratga oling.</p>
+                    </div>
+                    <div class="step-card card">
+                        <div class="step-number">02</div>
+                        <div class="step-emoji">✦</div>
+                        <h3>AI bilan tushuning</h3>
+                        <p>Qiyin joylarni oddiy, bosqichma-bosqich tilda ko‘ring.</p>
+                    </div>
+                    <div class="step-card card">
+                        <div class="step-number">03</div>
+                        <div class="step-emoji">◈</div>
+                        <h3>Quiz bilan tekshiring</h3>
+                        <p>Yangi bilimni mini-test va natijalar bilan mustahkamlang.</p>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">© 2026 StudyLens UZ <span>•</span> Learn smarter, not harder.</footer>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

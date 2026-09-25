@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Study — StudyLens</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="study">
+    <div class="app-shell">
+        <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><span
+                    class="brand-mark">S</span><span>StudyLens</span><b>UZ</b></a>
+            <div class="profile-mini">
+                <div class="avatar" data-avatar>B</div>
+                <div><strong data-name>Bunyod</strong><small>Student account</small></div>
+            </div>
+            <nav class="nav"><a href="index.html" data-nav="home"><span>⌂</span> Bosh sahifa</a><a href="study.html"
+                    data-nav="study"><span>✦</span> AI Study</a><a href="quiz.html" data-nav="quiz"><span>◈</span> Quiz
+                    Arena</a><a href="progress.html" data-nav="progress"><span>◒</span> Progress</a><a
+                    href="library.html" data-nav="library"><span>▱</span> Library</a></nav>
+            <div class="sidebar-bottom"><a href="settings.html" data-nav="settings"><span>⚙</span> Sozlamalar</a><button
+                    class="theme-toggle" id="themeToggle"><span>☾</span> Rejimni almashtirish</button></div>
+        </aside>
+        <main class="main">
+            <header class="topbar"><button class="mobile-menu" id="mobileMenu">☰</button>
+                <div class="search"><span>⌕</span><input id="globalSearch"
+                        placeholder="Mavzu, fan yoki test qidiring..." /></div>
+                <div class="top-actions"><a class="icon-btn" href="library.html">▱</a><a class="icon-btn"
+                        href="settings.html">⚙</a>
+                    <div class="avatar" data-avatar>B</div>
+                </div>
+            </header>
+            <section class="page">
+                <div class="section-head">
+                    <div><span class="eyebrow">AI STUDY LAB</span>
+                        <h1 class="page-title">Bir savol. Yaxshi tushuncha.</h1>
+                        <p class="page-subtitle">Rasm, savol yoki mavzu yuboring. Demo AI javobni shu sahifada yaratadi.
+                        </p>
+                    </div><span class="status-pill"><i></i> AI online</span>
+                </div>
+                <div class="study-layout">
+                    <div class="card upload-card">
+                        <div class="card-title-row">
+                            <div>
+                                <h2>1. Materialni yuborish</h2>
+                                <p>Rasm yuklang yoki savolni yozing.</p>
+                            </div><span class="mini-badge">MVP</span>
+                        </div>
+                        <div id="dropzone" class="dropzone">
+                            <div class="drop-icon">⇧</div>
+                            <h3>Rasmni shu yerga tashlang</h3>
+                            <p>JPG, PNG yoki WEBP • 10 MB gacha</p><label class="btn btn-primary file-btn"
+                                for="imageInput">Rasm tanlash</label><input id="imageInput" type="file" accept="image/*"
+                                hidden />
+                        </div>
+                        <div id="imagePreview" class="image-preview hidden"><img id="previewImg" alt="Preview" /><button
+                                id="removeImage" class="remove-image">×</button></div>
+                        <div class="form-grid">
+                            <label>Fan<select id="subject">
+                                    <option value="matematika">Matematika</option>
+                                    <option value="fizika">Fizika</option>
+                                    <option value="english">English</option>
+                                    <option value="it">IT</option>
+                                    <option value="tarix">Tarix</option>
+                                </select></label>
+                            <label>Daraja<select id="level">
+                                    <option>Boshlang‘ich</option>
+                                    <option>O‘rta</option>
+                                    <option>Yuqori</option>
+                                </select></label>
+                        </div>
+                        <label class="textarea-label">Savol<textarea id="question"
+                                placeholder="Masalan: 2/3 + 1/6 ni qanday yechaman?"></textarea></label>
+                        <div class="prompt-row"><button class="prompt-chip"
+                                data-prompt="Kasrlarni oddiy qilib tushuntir.">Kasrlar</button><button
+                                class="prompt-chip" data-prompt="JavaScript array nima?">JavaScript</button><button
+                                class="prompt-chip" data-prompt="Nyutonning 2-qonuni nima?">Fizika</button></div>
+                        <button id="solveBtn" class="btn btn-primary wide">✦ Tushuntirib ber</button>
+                    </div>
+                    <div class="card answer-card">
+                        <div class="card-title-row">
+                            <div>
+                                <h2>2. AI tushuntirishi</h2>
+                                <p>Javob, misol va keyingi qadamlar.</p>
+                            </div><button id="saveAnswer" class="icon-btn small">♡</button>
+                        </div>
+                        <div id="answerEmpty" class="empty-state">
+                            <div class="empty-orb">✦</div>
+                            <h3>Hali javob yo‘q</h3>
+                            <p>Chap tomondan savol yuboring. Natija shu yerda paydo bo‘ladi.</p>
+                        </div>
+                        <div id="answerContent" class="answer-content hidden"></div>
+                        <div class="answer-footer hidden" id="answerFooter"><span>StudyLens demo AI</span><button
+                                id="saveNoteBtn" class="text-btn">Library’ga saqlash →</button></div>
+                    </div>
+                </div>
+                <div class="card tip-banner">
+                    <div class="tip-icon">💡</div>
+                    <div><strong>Pro tip</strong>
+                        <p>Yaxshi natija uchun savolni aniq yozing: “Bu formulani qayerda ishlataman?” kabi.</p>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">AI Study • StudyLens UZ</footer>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

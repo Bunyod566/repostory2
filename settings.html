@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings — StudyLens</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="settings">
+    <div class="app-shell">
+        <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><span
+                    class="brand-mark">S</span><span>StudyLens</span><b>UZ</b></a>
+            <div class="profile-mini">
+                <div class="avatar" data-avatar>B</div>
+                <div><strong data-name>Bunyod</strong><small>Student account</small></div>
+            </div>
+            <nav class="nav"><a href="index.html" data-nav="home"><span>⌂</span> Bosh sahifa</a><a href="study.html"
+                    data-nav="study"><span>✦</span> AI Study</a><a href="quiz.html" data-nav="quiz"><span>◈</span> Quiz
+                    Arena</a><a href="progress.html" data-nav="progress"><span>◒</span> Progress</a><a
+                    href="library.html" data-nav="library"><span>▱</span> Library</a></nav>
+            <div class="sidebar-bottom"><a href="settings.html" data-nav="settings"><span>⚙</span> Sozlamalar</a><button
+                    class="theme-toggle" id="themeToggle"><span>☾</span> Rejimni almashtirish</button></div>
+        </aside>
+        <main class="main">
+            <header class="topbar"><button class="mobile-menu" id="mobileMenu">☰</button>
+                <div class="search"><span>⌕</span><input id="globalSearch" placeholder="Sozlamalarni qidiring..." />
+                </div>
+                <div class="top-actions"><a class="icon-btn" href="library.html">▱</a>
+                    <div class="avatar" data-avatar>B</div>
+                </div>
+            </header>
+            <section class="page">
+                <div class="section-head">
+                    <div><span class="eyebrow">SETTINGS</span>
+                        <h1 class="page-title">Profil va sozlamalar.</h1>
+                        <p class="page-subtitle">Bu demo barcha sozlamalarni brauzeringizda saqlaydi.</p>
+                    </div>
+                </div>
+                <div class="settings-layout">
+                    <div class="card settings-nav"><button class="settings-tab active">Profil</button><button
+                            class="settings-tab">Ko‘rinish</button><button class="settings-tab">Ma’lumotlar</button>
+                    </div>
+                    <div class="card settings-panel">
+                        <div class="setting-section">
+                            <div><span class="eyebrow">PROFILE</span>
+                                <h2>O‘quvchi profili</h2>
+                                <p>Ismingizni kiriting.</p>
+                            </div><label>Ism<input id="nameInput" type="text" placeholder="Bunyod"
+                                    maxlength="24" /></label><button id="saveName"
+                                class="btn btn-primary">Saqlash</button>
+                        </div>
+                        <div class="setting-section">
+                            <div><span class="eyebrow">APPEARANCE</span>
+                                <h2>Ko‘rinish</h2>
+                                <p>Light yoki dark rejimni tanlang.</p>
+                            </div>
+                            <div class="theme-options"><button class="theme-option" type="button"
+                                    data-theme-choice="light" aria-pressed="false">☀️ Light</button><button
+                                    class="theme-option" type="button" data-theme-choice="dark" aria-pressed="false">🌙
+                                    Dark</button></div>
+                        </div>
+                        <div class="setting-section danger">
+                            <div><span class="eyebrow">DATA</span>
+                                <h2>Demo ma’lumotlari</h2>
+                                <p>Saqlangan darslar va statistika brauzerda turadi.</p>
+                            </div><button id="clearData" class="btn btn-danger">Barcha ma’lumotlarni tozalash</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">Settings • StudyLens UZ</footer>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
