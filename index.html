@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#6c5ce7" />
-    <title>StudyLens — Aqlli o'qish platformasi</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>StudyLens — Aqlli o‘qish platformasi</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body data-page="home">
@@ -14,16 +14,16 @@
         <aside class="sidebar" id="sidebar">
             <a class="brand" href="index.html"><span class="brand-mark">S</span><span>StudyLens</span><b>UZ</b></a>
             <div class="profile-mini">
-                <div class="avatar" data-avatar>A</div>
-                <div><strong data-name>Alisher</strong><small>Student account</small></div>
+                <div class="avatar" data-avatar>B</div>
+                <div><strong data-name>Bunyod</strong><small>Student account</small></div>
             </div>
             <nav class="nav">
                 <a href="index.html" data-nav="home"><span>⌂</span> Bosh sahifa</a>
                 <a href="study.html" data-nav="study"><span>✦</span> AI Study</a>
                 <a href="quiz.html" data-nav="quiz"><span>◈</span> Quiz Arena</a>
                 <a href="progress.html" data-nav="progress"><span>◒</span> Progress</a>
-                <a href="library.html" data-nav="library"><span>▱</span> Library</a>
-                <a href="premium.html" data-nav="premium"><span>✦</span> Premium</a>
+                <a href="library.html" data-nav="library"><span>▱</span> Library</a><a href="premium.html"
+                    data-nav="premium"><span>✦</span> Premium</a>
             </nav>
             <div class="sidebar-bottom">
                 <a href="settings.html" data-nav="settings"><span>⚙</span> Sozlamalar</a>
@@ -50,7 +50,7 @@
                         <p>Rasmni yukla, mavzuni tanla va StudyLens bilan darsni oddiy tilda tushun. Keyin Quiz Arena’da
                             o‘zingni sinab ko‘r.</p>
                         <div class="hero-actions"><a href="study.html" class="btn btn-light">AI bilan o‘rganish →</a><a
-                                href="quiz.html" class="btn btn-ghost">Quizni boshlash</a></div>
+                                href="./quiz.html" class="btn btn-ghost" id="goToQuizBtn">Quizni boshlash →</a></div>
                         <div class="hero-meta"><span>⚡ Tez tushuntirish</span><span>🧠 Bosqichma-bosqich</span><span>✓
                                 O‘zbekcha</span></div>
                     </div>
@@ -121,6 +121,15 @@
                     </a>
                 </div>
 
+                <div class="premium-promo card">
+                    <div>
+                        <span class="premium-kicker">✦ PREMIUM</span>
+                        <h2>Ko‘proq o‘rganish. Ko‘proq imkoniyat.</h2>
+                        <p>Deep AI, unlimited quiz va Smart Progress kabi Pro funksiyalarni bitta rejimda oching.</p>
+                    </div>
+                    <a href="premium.html" class="btn btn-premium">Premiumni ko‘rish →</a>
+                </div>
+
                 <div class="section-head top-gap">
                     <div><span class="eyebrow">SIZ UCHUN</span>
                         <h2>StudyLens qanday ishlaydi?</h2>
@@ -150,6 +159,12 @@
             <footer class="footer">© 2026 StudyLens UZ <span>•</span> Learn smarter, not harder.</footer>
         </main>
     </div>
+    <script>
+        document.getElementById("goToQuizBtn")?.addEventListener("click", function (e) {
+            e.preventDefault();
+            window.location.href = "./quiz.html";
+        });
+    </script>
     <script src="app.js"></script>
 </body>
 
