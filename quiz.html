@@ -19,7 +19,8 @@
             <nav class="nav"><a href="index.html" data-nav="home"><span>⌂</span> Bosh sahifa</a><a href="study.html"
                     data-nav="study"><span>✦</span> AI Study</a><a href="quiz.html" data-nav="quiz"><span>◈</span> Quiz
                     Arena</a><a href="progress.html" data-nav="progress"><span>◒</span> Progress</a><a
-                    href="library.html" data-nav="library"><span>▱</span> Library</a></nav>
+                    href="library.html" data-nav="library"><span>▱</span> Library</a><a href="premium.html"
+                    data-nav="premium"><span>✦</span> Premium</a></nav>
             <div class="sidebar-bottom"><a href="settings.html" data-nav="settings"><span>⚙</span> Sozlamalar</a><button
                     class="theme-toggle" id="themeToggle"><span>☾</span> Rejimni almashtirish</button></div>
         </aside>
@@ -72,8 +73,9 @@
                     </div>
                     <div class="card question-card"><span class="eyebrow">SAVOL <span id="qNum">1</span></span>
                         <h2 id="qText">Savol</h2>
-                        <div id="options" class="options"></div><button id="nextQuestion" class="btn btn-primary wide"
-                            disabled>Keyingi savol →</button>
+                        <div id="options" class="options"></div>
+                        <div id="answerFeedback" class="answer-feedback" aria-live="polite"></div><button
+                            id="nextQuestion" class="btn btn-primary wide" disabled>Keyingi savol →</button>
                     </div>
                 </div>
                 <div id="quizResult" class="card quiz-result hidden">

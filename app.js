@@ -1,48 +1,3 @@
-// --- DARK VA LIGHT REJIM (THEME TOGGLE) ---
-
-const themeToggle = document.getElementById("themeToggle");
-const themeOptions = document.querySelectorAll("[data-theme-choice]");
-
-// Sahifa yuklanganda saqlangan rejimni tekshirish
-document.addEventListener("DOMContentLoaded", () => {
-    const savedTheme = localStorage.getItem("theme") || "light";
-    setTheme(savedTheme);
-});
-
-// Sidebar'dagi tugma bosilganda (Light <-> Dark o'tish)
-if (themeToggle) {
-    themeToggle.addEventListener("click", () => {
-        const currentTheme = document.documentElement.getAttribute("data-theme");
-        const newTheme = currentTheme === "dark" ? "light" : "dark";
-        setTheme(newTheme);
-    });
-}
-
-// Settings sahifasidagi tanlov tugmalari uchun
-themeOptions.forEach(button => {
-    button.addEventListener("click", () => {
-        const selectedTheme = button.getAttribute("data-theme-choice");
-        setTheme(selectedTheme);
-    });
-});
-
-// Rejimni o'rnatish va saqlash funksiyasi
-function setTheme(theme) {
-    document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
-
-    // Settings sahifasidagi tugmalarning holatini (active/pressed) yangilash
-    themeOptions.forEach(button => {
-        const choice = button.getAttribute("data-theme-choice");
-        if (choice === theme) {
-            button.setAttribute("aria-pressed", "true");
-            button.classList.add("active");
-        } else {
-            button.setAttribute("aria-pressed", "false");
-            button.classList.remove("active");
-        }
-    });
-
     // Sidebar'dagi tugma matni yoki ikonkasini o'zgartirish (ixtiyoriy)
     if (themeToggle) {
         if (theme === "dark") {
@@ -51,7 +6,7 @@ function setTheme(theme) {
             themeToggle.innerHTML = "<span>☾</span> Rejimni almashtirish";
         }
     }
-}
+
 
 const imageInput = document.getElementById("imageInput");
 const previewImage = document.getElementById("previewImage");
